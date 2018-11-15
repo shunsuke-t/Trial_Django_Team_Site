@@ -20,4 +20,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path(r'',include('top.urls')),
     path(r'r_umetea',include('r_umetea.urls')),
+    path(r'r_shunsuket',include('r_shunsuket.urls')),
 ]

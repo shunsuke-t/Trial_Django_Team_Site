@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'top',
     'r_umetea',
+    'r_shunsuket',
 ]
 
 MIDDLEWARE = [
