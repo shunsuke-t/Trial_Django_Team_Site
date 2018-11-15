@@ -2,13 +2,14 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>トップページだよ</title>
+        <title>umeteaのページだよ</title>
     </head>
     <body>
         <div class="container">
-            <h2>ここはチームサイトです</h2>
+            <h2>umeteaの個人ページです</h2>
         </div>
+        <h1><a href="{% url 'r_umetea:front' %}">umeteaの部屋。フロント</a></h1>
         <h1><a href="{% url 'top:index' %}">topへ</a></h1>
-        <h1><a href="{% url 'r_umetea:main' %}">umeteaの部屋。view呼び出し</a></h1>
+
     </body>
 </html>
