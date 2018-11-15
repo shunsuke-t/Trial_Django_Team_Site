@@ -19,4 +19,5 @@ from django.urls import path,include
 urlpatterns = [
     path('admin/', admin.site.urls),
     path(r'',include('top.urls')),
+    path(r'r_umetea',include('r_umetea.urls')),
 ]

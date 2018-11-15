@@ -1,4 +1,9 @@
-from django.http import HttpResponse
+from django.shortcuts import render,get_object_or_404
+from django.http import HttpResponse,HttpResponseRedirect
+from django.urls import reverse
 
-def index(request):
-    return HttpResponse("umetea room")
+def main(req):
+    return render(req,'r_umetea/index.html')
+
+def front(req):
+    return HttpResponse("ここはフロントページです")
