@@ -14,11 +14,12 @@
     </head>
     <body>
         <div class="container">
-            <h1>umeteaの個人ページ入口です</h1>
+            <h1>umeteaのフロントページです</h1>
         </div>
-        <h2><a href="{% url 'r_umetea:response_test' %}">処理テストへ</a></h2>
-        <h2><a href="{% url 'r_umetea:front' %}">フロントページへ</a></h2>
-        <h2><a href="{% url 'r_umetea:about' %}">あばうとページへ</a></h2>
+        <div class="view"><a class="message">今日の天気は[</a>{{ tenki }}<a class="message">]です！</a></div>
+        <div class="view"><a class="message">今日のあなたの運勢は[</a>{{ unsei }}<a class="message">]です！</a></div>
+        <br>
+        <h2><a href="{% url 'r_umetea:main' %}">umeteaの部屋入口へ</a></h2>
         <br>
         <h2><a href="{% url 'top:index' %}">topへ</a></h2>
 
